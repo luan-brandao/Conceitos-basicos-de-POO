@@ -1,0 +1,22 @@
+# Exemplo de polimorfismo - Batalha entre personagens
+
+# Função para realizar a batalha entre dois personagens
+def batalhar(personagem1, personagem2):
+    print(f"{personagem1.nome} está enfrentando {personagem2.nome}!")
+
+    personagem1.atacar(personagem2)  # Chamada polimórfica do método atacar()
+    personagem2.atacar(personagem1)  # Chamada polimórfica do método atacar()
+
+    print("-----------------------")
+
+
+# Criando instâncias dos personagens
+guerreiro1 = Guerreiro("Guerreiro 1", 100, 20, 10)
+mago1 = Mago("Mago 1", 80, 30, 50)
+
+# Realizando a batalha entre guerreiro1 e mago1
+batalhar(guerreiro1, mago1)
+
+
+#Durante a chamada da função batalhar(), passamos os personagens guerreiro1 e mago1 como parâmetros. Dentro dessa função, usamos o polimorfismo para chamar o método atacar() de cada personagem.
+#Essa chamada polimórfica permite que, independentemente do tipo específico do personagem (Guerreiro ou Mago), o método atacar() correspondente seja invocado.
