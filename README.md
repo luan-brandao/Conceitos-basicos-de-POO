@@ -3,8 +3,10 @@
 ![engSoftware](https://user-images.githubusercontent.com/109771351/228922918-bc9b864f-57bf-443d-a45c-7b127f923eef.jpeg)
 
 
-Aluno: Luan santos brandão da Silva. 
+Aluno: Luan santos brandão da Silva.
+
 Matricula: 202210940
+
 Turma: B
 
 
