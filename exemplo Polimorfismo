@@ -7,7 +7,7 @@ def batalhar(personagem1, personagem2):
     personagem1.atacar(personagem2)  # Chamada polimórfica do método atacar()
     personagem2.atacar(personagem1)  # Chamada polimórfica do método atacar()
 
-    print("-----------------------")
+   
 
 
 # Criando instâncias dos personagens
