@@ -1,0 +1,45 @@
+class Personagem():
+    def _init_(self, nome, vida, ataque):
+        self.nome = nome
+        self.vida = vida
+        self.ataque = ataque
+
+    def atacar(self, alvo):
+        print(f"{self.nome} ataca {alvo.nome} causando {self.ataque} de dano!")
+        alvo.vida -= self.ataque
+
+    def exibir_status(self):
+        print(f"Nome: {self.nome}")
+        print(f"Vida: {self.vida}")
+        print(f"Ataque: {self.ataque}")
+
+
+class Guerreiro(Personagem):
+    def _init_(self, nome, vida, ataque, defesa):
+        super()._init_(nome, vida, ataque)
+        self.defesa = defesa
+
+    def defender(self):
+        print(f"{self.nome} defende um ataque!")
+
+    def exibir_status(self):
+        super().exibir_status()
+        print(f"Defesa: {self.defesa}")
+
+class Mago(Personagem):
+    def _init_(self, nome, vida, ataque, magia):
+        super()._init_(nome, vida, ataque)
+        self.magia = magia
+
+    def lancar_magia(self):
+        print(f"{self.nome} lança uma magia poderosa!")
+
+    def exibir_status(self):
+        super().exibir_status()
+        print(f"Magia: {self.magia}")
+        
+        
+     
+#A classe Guerreiro e a classe Mago são subclasses da classe Personagem. A palavra-chave super () é usada nos construtores das subclasses para 
+#chamar o construtor da classe pai (Personagem) e inicializar os atributos herdados. 
+#Isso significa que as classes Guerreiro e Mago terão acesso aos atributos e métodos da classe Personagem sem precisar declará-los novamente.
